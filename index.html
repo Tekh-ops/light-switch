@@ -15,6 +15,7 @@ Author: SciFi NAuT
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/website-img/rocket.svg" />
+    <audio src="sound/switch.mp3" id="audio"></audio>
     <title>Lighting</title>
 </head>
 
@@ -41,7 +42,7 @@ Author: SciFi NAuT
                 <li><a href="https://scifinautcom.wordpress.com/contact/" target="_blank">Contact Us</a></li>
                 <li><a href="https://scifinautcom.wordpress.com/about/" target="_blank">About Me</a></li>
             </ul>
-            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            <button type="button" onclick="toggleBtn(),togglePlay()" id="btn"><span></span></button>
         </nav>
         <div class="lamp-container">
 
@@ -70,6 +71,7 @@ Author: SciFi NAuT
         <a href="https://github.com" target="_blank" class="fa fa-github" id="social"></a>
     </footer>
     <script>
+        // Switch Light On/off Btn
         var btn = document.getElementById("btn");
         var light = document.getElementById("light");
 
@@ -77,6 +79,20 @@ Author: SciFi NAuT
             btn.classList.toggle("active")
             light.classList.toggle("on")
         }
+
+        // Switch Sound play
+        var myAudio = document.getElementById("audio");
+        var isPlaying = false;
+
+        function togglePlay() {
+            isPlaying ? myAudio.pause() : myAudio.play();
+        };
+        myAudio.onplaying = function() {
+            isPlaying = true;
+        };
+        myAudio.onpause = function() {
+            isPlaying = false;
+        };
     </script>
 
 </body>
