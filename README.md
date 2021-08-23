@@ -4,4 +4,4 @@
 *This is a project on Javascript toggle function which, changes the css style of the lamp ,just click on the switch on top-right area of the site*
 
 ## Links
-You can checkout the hosted static site at [This Link](https://light-green.onrender.com/)
+#### Checkout the website at<a href="https://light-green.onrender.com/" target="_blank"> This Link</a>
