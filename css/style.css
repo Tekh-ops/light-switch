@@ -102,7 +102,7 @@ button span{
     font-weight: 400;
 }
 
-.text-container .unsplash{
+.text-container .collection{
     text-decoration: none;
     background-color: #00986f;
     padding: 14px 40px;
@@ -111,13 +111,14 @@ button span{
     font-size: 18px;
     margin-top: 30px;
     border-radius: 30px;
+    background-image: radial-gradient(#00986f 50%,#0693e3);
 }
 
 .control{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .control .line{
@@ -149,4 +150,54 @@ button span{
 
 .on{
     opacity: 1;
+}
+
+/* Footer Code */
+
+footer {
+    background-color: #00986f;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    font-size: 25px;
+    position: fixed;
+}
+
+/* Hover Grow Transition */
+
+#social { transition: all .2s ease-in-out; }
+#social:hover { transform: scale(1.5); }
+
+
+/* Social Account Links */
+
+.fa {
+    padding: 5px;
+    /* font-size: 20px; */
+    /* width: 30px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 6px;
+    border-radius: 1;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-github {
+    background: #000;
+    color: white;
 }

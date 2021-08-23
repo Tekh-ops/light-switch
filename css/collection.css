@@ -1,0 +1,47 @@
+body {
+    background: #1d2026;
+    font-family: "Jetbrains Mono", sans-serif;
+    margin: 0px;
+}
+
+h1 {
+    text-align:center;
+}
+
+.zoom:hover {
+    transform: scale(1.3);
+}
+
+img{
+    width: 450px;
+    height: 300px;
+    border: 5px solid #00986f;
+}
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.portfolio-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    text-align: right;
+}
