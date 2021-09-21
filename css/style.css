@@ -1,9 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Jetbrains Mono",sans-serif;
+    font-family: "Jetbrains Mono",Monospace;
     box-sizing: border-box;
 }
+
+/* @media (prefers-color-scheme: light) {
+    footer{
+        background-color: #24e38d;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    footer{
+        background-color: #0b488a;
+    }
+} */
 
 .main{
     background: #1d2026;
